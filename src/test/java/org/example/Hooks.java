@@ -1,4 +1,4 @@
-/*package org.example;
+package org.example;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -21,7 +21,7 @@ import org.example.driver.DriverManager;
                 driverManager.takeScreenshot(scenario);
             }
             //  driverManager.closeBrowser();
-        }}*/
+        }}
 
 
 
