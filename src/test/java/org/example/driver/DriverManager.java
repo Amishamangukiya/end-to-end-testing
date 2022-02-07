@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 public class DriverManager {
     public static WebDriver driver;
     String browser="chrome";
-    String basUrl ="https://opensource-demo.orangehrmlive.com/";
+    String basUrl ="http://automationpractice.com/index.php";
 
     public DriverManager(){
         PageFactory.initElements(driver,this);
