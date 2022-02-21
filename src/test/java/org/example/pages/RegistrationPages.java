@@ -66,14 +66,14 @@ public class RegistrationPages extends DriverManager {
         creatAnAccontBox.click();
     }
 
-    public void enterFirstName(String firstname) {
+    public void  enterFirstName(String firstname) {
         firstNAmeFeild.sendKeys(firstname);
     }
     public void enterLastName(String lastname) {
         lastnameFeild.sendKeys(lastname);
     }
     public  void enterPassword(String password){
-         postalFeild.sendKeys(password);}
+         passwordFeild.sendKeys(password);}
 
     public void enterAdrress(String address){
          addressFeild.sendKeys(address);}
@@ -82,6 +82,8 @@ public class RegistrationPages extends DriverManager {
     }
     public void enterPostalCode(String postalcode) {
         postalFeild.sendKeys(postalcode);
+
+
     }
     public void enterMobileNo(String mobilenumber){
          mobileFeild.sendKeys(mobilenumber);
@@ -97,21 +99,21 @@ public class RegistrationPages extends DriverManager {
 //
 //postalFeild.sendKeys(postalcode);
 //mobileFeild.sendKeys(mobileNo);
-
+// public void selectCountrySelection(String countryName) {
+//        Select select = new Select(countrySelection);
+//        select.selectByVisibleText(countryName);
 
      }
-     public void selectState( String state){
+     public void selectState( String stateName){
          Select se= new Select(stateFeild);
-         se.selectByValue(state);
+        // se.selectByValue("10");
+         se.selectByIndex(10);
      }
-     public  void selectCountry(String country ){
+     public  void selectCountry(String countryName ){
          Select se= new Select(countryFeild);
-         se.selectByValue(country);
+         se.selectByIndex(1);
 
-         //public void selectCountrySelection(String countryName) {
-         //        Select select = new Select(countrySelection);
-         //        select.selectByVisibleText(countryName);
-         //    }
+
      }
      public  void clickOnRegistationBtn(){
          registerBtn.click();
