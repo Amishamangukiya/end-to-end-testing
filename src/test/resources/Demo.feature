@@ -5,7 +5,7 @@ Scenario: validate sign in page
 
 Given I am on home page
 When I click on sign in btn
-And I enter valid e-mail address "sweetmegs2604@gmail.com"
+And I enter valid e-mail address "binee123@gmail.com"
 And I click on create  an account
 Then I should see create an account page
 And I enter following details to register

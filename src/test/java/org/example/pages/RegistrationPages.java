@@ -18,7 +18,7 @@ public class RegistrationPages extends DriverManager {
     private  WebElement creatAnAccontBox;
 
      @FindBy(id ="customer_firstname")
-     private  WebElement firstNAmeFeild;
+     private  WebElement firstNameFeild;
 
      @FindBy(id = "customer_lastname")
      private  WebElement lastnameFeild;
@@ -59,7 +59,7 @@ public class RegistrationPages extends DriverManager {
 
     public void enterEmail() {
         int myRandomNumber = driverManager.generateRandomNumber();
-           emailInputBox.sendKeys("meghs@gmail.com");
+           emailInputBox.sendKeys("binee123@gmail.com");
 
     }
     public  void clickOnCreatAnAccountBtn(){
@@ -67,7 +67,7 @@ public class RegistrationPages extends DriverManager {
     }
 
     public void  enterFirstName(String firstname) {
-        firstNAmeFeild.sendKeys(firstname);
+        firstNameFeild.sendKeys(firstname);
     }
     public void enterLastName(String lastname) {
         lastnameFeild.sendKeys(lastname);

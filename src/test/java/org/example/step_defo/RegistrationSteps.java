@@ -20,11 +20,7 @@ public class RegistrationSteps extends DriverManager {
 
     List<Map<String,String>> data;
 
-    @Given("^I am on home page$")
-    public void i_am_on_home_page() throws Throwable {
 
-rp.getUrl();
-    }
 
     @When("^I click on sign in btn$")
     public void i_click_on_sign_in_btn() throws Throwable {
